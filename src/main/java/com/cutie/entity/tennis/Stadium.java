@@ -12,12 +12,13 @@ import java.util.Date;
  */
 public class Stadium {
 
-    private Date name;
-    public void setName(Date name) {
-         this.name = name;
-     }
-     public Date getName() {
-         return name;
-     }
+    private String name;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

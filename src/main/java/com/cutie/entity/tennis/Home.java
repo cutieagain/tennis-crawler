@@ -13,7 +13,7 @@ import java.util.Date;
 public class Home {
 
     private String decimalValue;
-    private Date fractionalValue;
+    private String fractionalValue;
     private String americanValue;
     private int expected;
     private int actual;
@@ -24,12 +24,13 @@ public class Home {
          return decimalValue;
      }
 
-    public void setFractionalValue(Date fractionalValue) {
-         this.fractionalValue = fractionalValue;
-     }
-     public Date getFractionalValue() {
-         return fractionalValue;
-     }
+    public String getFractionalValue() {
+        return fractionalValue;
+    }
+
+    public void setFractionalValue(String fractionalValue) {
+        this.fractionalValue = fractionalValue;
+    }
 
     public void setAmericanValue(String americanValue) {
          this.americanValue = americanValue;

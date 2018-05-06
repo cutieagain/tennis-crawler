@@ -2,7 +2,6 @@
   * Copyright 2018 bejson.com 
   */
 package com.cutie.entity.tennis;
-import java.util.Date;
 
 /**
  * Auto-generated: 2018-05-06 21:33:22
@@ -41,7 +40,7 @@ public class Event {
     private Periods periods;
     private String name;
     private String startTime;
-    private Date formatedStartDate;
+    private String formatedStartDate;
     private long startTimestamp;
     private String statusDescription;
     private String slug;
@@ -260,12 +259,97 @@ public class Event {
          return startTime;
      }
 
-    public void setFormatedStartDate(Date formatedStartDate) {
-         this.formatedStartDate = formatedStartDate;
-     }
-     public Date getFormatedStartDate() {
-         return formatedStartDate;
-     }
+    public boolean isHasLineups() {
+        return hasLineups;
+    }
+
+    public boolean isHasHighlights() {
+        return hasHighlights;
+    }
+
+    public boolean isHasHighlightsStream() {
+        return hasHighlightsStream;
+    }
+
+    public boolean isHasStatistics() {
+        return hasStatistics;
+    }
+
+    public boolean isHasSubScore() {
+        return hasSubScore;
+    }
+
+    public boolean isHasFirstToServe() {
+        return hasFirstToServe;
+    }
+
+    public boolean isHasDraw() {
+        return hasDraw;
+    }
+
+    public boolean isCouplesMatch() {
+        return isCouplesMatch;
+    }
+
+    public void setCouplesMatch(boolean couplesMatch) {
+        isCouplesMatch = couplesMatch;
+    }
+
+    public boolean isHasTime() {
+        return hasTime;
+    }
+
+    public String getFormatedStartDate() {
+        return formatedStartDate;
+    }
+
+    public void setFormatedStartDate(String formatedStartDate) {
+        this.formatedStartDate = formatedStartDate;
+    }
+
+    public boolean isHasLineupsList() {
+        return hasLineupsList;
+    }
+
+    public boolean isHasVenue() {
+        return hasVenue;
+    }
+
+    public boolean isHasOdds() {
+        return hasOdds;
+    }
+
+    public boolean isHasLiveOdds() {
+        return hasLiveOdds;
+    }
+
+    public boolean isHasAggregatedScore() {
+        return hasAggregatedScore;
+    }
+
+    public boolean isVotingEnabled() {
+        return votingEnabled;
+    }
+
+    public boolean isSyncable() {
+        return isSyncable;
+    }
+
+    public void setSyncable(boolean syncable) {
+        isSyncable = syncable;
+    }
+
+    public boolean isShowEventNote() {
+        return showEventNote;
+    }
+
+    public boolean isHasHalfTimeScore() {
+        return hasHalfTimeScore;
+    }
+
+    public boolean isConfirmedLineups() {
+        return confirmedLineups;
+    }
 
     public void setStartTimestamp(long startTimestamp) {
          this.startTimestamp = startTimestamp;

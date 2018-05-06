@@ -13,18 +13,32 @@ import java.util.List;
  */
 public class Changes {
 
-    private Date changeDate;
+    private String changeDate;
     private List<String> changes;
     private long changeTimestamp;
     private boolean hasExpired;
     private boolean hasHomeChanges;
     private boolean hasAwayChanges;
-    public void setChangeDate(Date changeDate) {
-         this.changeDate = changeDate;
-     }
-     public Date getChangeDate() {
-         return changeDate;
-     }
+
+    public String getChangeDate() {
+        return changeDate;
+    }
+
+    public void setChangeDate(String changeDate) {
+        this.changeDate = changeDate;
+    }
+
+    public boolean isHasExpired() {
+        return hasExpired;
+    }
+
+    public boolean isHasHomeChanges() {
+        return hasHomeChanges;
+    }
+
+    public boolean isHasAwayChanges() {
+        return hasAwayChanges;
+    }
 
     public void setChanges(List<String> changes) {
          this.changes = changes;

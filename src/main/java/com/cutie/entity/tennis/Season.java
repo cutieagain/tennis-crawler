@@ -12,23 +12,26 @@ import java.util.Date;
  */
 public class Season {
 
-    private Date name;
-    private Date slug;
+    private String name;
+    private String slug;
     private String year;
     private int id;
-    public void setName(Date name) {
-         this.name = name;
-     }
-     public Date getName() {
-         return name;
-     }
 
-    public void setSlug(Date slug) {
-         this.slug = slug;
-     }
-     public Date getSlug() {
-         return slug;
-     }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSlug() {
+        return slug;
+    }
+
+    public void setSlug(String slug) {
+        this.slug = slug;
+    }
 
     public void setYear(String year) {
          this.year = year;

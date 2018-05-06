@@ -13,7 +13,6 @@ import java.util.List;
 public class TennisRoot {
 
     private Event event;
-    private String matchInfo;
     private String teamsForm;
     private WinningOdds winningOdds;
     private List<String> incidents;
@@ -30,18 +29,22 @@ public class TennisRoot {
     private List<PointByPoint> pointByPoint;
     private String managerDuel;
     private H2hDuel h2hDuel;
+
+
+    private MatchInfo matchInfo;
+    public void setMatchInfo(MatchInfo matchInfo) {
+        this.matchInfo = matchInfo;
+    }
+    public MatchInfo getMatchInfo() {
+        return matchInfo;
+    }
+
+
     public void setEvent(Event event) {
          this.event = event;
      }
      public Event getEvent() {
          return event;
-     }
-
-    public void setMatchInfo(String matchInfo) {
-         this.matchInfo = matchInfo;
-     }
-     public String getMatchInfo() {
-         return matchInfo;
      }
 
     public void setTeamsForm(String teamsForm) {

@@ -2,7 +2,6 @@
   * Copyright 2018 bejson.com 
   */
 package com.cutie.entity.tennis;
-import java.util.List;
 
 /**
  * Auto-generated: 2018-05-06 21:33:22
@@ -10,40 +9,31 @@ import java.util.List;
  * @author bejson.com (i@bejson.com)
  * @website http://www.bejson.com/java2pojo/
  */
-public class Statistics {
+public class Period3 {
 
+    private int homeMaxPointsInRow;
+    private int awayMaxPointsInRow;
+    private int homeMaxGamesInRow;
+    private int awayMaxGamesInRow;
     private int homeAces;
     private int awayAces;
     private int homeDoubleFaults;
     private int awayDoubleFaults;
-    private int homeMaxPointsInRow;
-    private int awayMaxPointsInRow;
     private int homePoints;
     private int awayPoints;
-    private int homeGames;
-    private int awayGames;
-    private int homeMaxGamesInRow;
-    private int awayMaxGamesInRow;
-    private int homeTiebreaks;
     private int awayTiebreaks;
-    private int homeFirstServePointsScored;
-    private int homeFirstServePointsTotal;
-    private int homeFirstServePointsAccuracy;
-    private int awayFirstServePointsScored;
-    private int awayFirstServePointsTotal;
-    private int awayFirstServePointsAccuracy;
+    private int homeServicePointsScored;
+    private int homeServicePointsTotal;
+    private int homeServicePointsAccuracy;
+    private int awayServicePointsScored;
+    private int awayServicePointsTotal;
+    private int awayServicePointsAccuracy;
     private int homeFirstServeScored;
     private int homeFirstServeTotal;
     private int homeFirstServeAccuracy;
     private int awayFirstServeScored;
     private int awayFirstServeTotal;
     private int awayFirstServeAccuracy;
-    private int homeSecondServePointsScored;
-    private int homeSecondServePointsTotal;
-    private int homeSecondServePointsAccuracy;
-    private int awaySecondServePointsScored;
-    private int awaySecondServePointsTotal;
-    private int awaySecondServePointsAccuracy;
     private int homeSecondServeScored;
     private int homeSecondServeTotal;
     private int homeSecondServeAccuracy;
@@ -56,38 +46,58 @@ public class Statistics {
     private int awayBreakPointsScored;
     private int awayBreakPointsTotal;
     private int awayBreakPointsAccuracy;
-    private int homeServicePointsScored;
-    private int homeServicePointsTotal;
-    private int homeServicePointsAccuracy;
-    private int awayServicePointsScored;
-    private int awayServicePointsTotal;
-    private int awayServicePointsAccuracy;
     private int homeServiceGamesScored;
     private int homeServiceGamesTotal;
     private int homeServiceGamesAccuracy;
     private int awayServiceGamesScored;
     private int awayServiceGamesTotal;
     private int awayServiceGamesAccuracy;
+    private int homeFirstServePointsScored;
+    private int homeFirstServePointsTotal;
+    private int homeFirstServePointsAccuracy;
+    private int awayFirstServePointsScored;
+    private int awayFirstServePointsTotal;
+    private int awayFirstServePointsAccuracy;
+    private int homeSecondServePointsScored;
+    private int homeSecondServePointsTotal;
+    private int homeSecondServePointsAccuracy;
+    private int awaySecondServePointsScored;
+    private int awaySecondServePointsTotal;
+    private int awaySecondServePointsAccuracy;
     private int homeReceiverPointsScored;
     private int homeReceiverPointsTotal;
     private int homeReceiverPointsAccuracy;
     private int awayReceiverPointsScored;
     private int awayReceiverPointsTotal;
     private int awayReceiverPointsAccuracy;
-    private Period1 period1;
-    private Period2 period2;
+    public void setHomeMaxPointsInRow(int homeMaxPointsInRow) {
+         this.homeMaxPointsInRow = homeMaxPointsInRow;
+     }
+     public int getHomeMaxPointsInRow() {
+         return homeMaxPointsInRow;
+     }
 
-    public Period3 getPeriod3() {
-        return period3;
-    }
+    public void setAwayMaxPointsInRow(int awayMaxPointsInRow) {
+         this.awayMaxPointsInRow = awayMaxPointsInRow;
+     }
+     public int getAwayMaxPointsInRow() {
+         return awayMaxPointsInRow;
+     }
 
-    public void setPeriod3(Period3 period3) {
-        this.period3 = period3;
-    }
+    public void setHomeMaxGamesInRow(int homeMaxGamesInRow) {
+         this.homeMaxGamesInRow = homeMaxGamesInRow;
+     }
+     public int getHomeMaxGamesInRow() {
+         return homeMaxGamesInRow;
+     }
 
-    private Period3 period3;
-    private StatisticsItems statisticsItems;
-    private List<Periods> periods;
+    public void setAwayMaxGamesInRow(int awayMaxGamesInRow) {
+         this.awayMaxGamesInRow = awayMaxGamesInRow;
+     }
+     public int getAwayMaxGamesInRow() {
+         return awayMaxGamesInRow;
+     }
+
     public void setHomeAces(int homeAces) {
          this.homeAces = homeAces;
      }
@@ -116,20 +126,6 @@ public class Statistics {
          return awayDoubleFaults;
      }
 
-    public void setHomeMaxPointsInRow(int homeMaxPointsInRow) {
-         this.homeMaxPointsInRow = homeMaxPointsInRow;
-     }
-     public int getHomeMaxPointsInRow() {
-         return homeMaxPointsInRow;
-     }
-
-    public void setAwayMaxPointsInRow(int awayMaxPointsInRow) {
-         this.awayMaxPointsInRow = awayMaxPointsInRow;
-     }
-     public int getAwayMaxPointsInRow() {
-         return awayMaxPointsInRow;
-     }
-
     public void setHomePoints(int homePoints) {
          this.homePoints = homePoints;
      }
@@ -144,41 +140,6 @@ public class Statistics {
          return awayPoints;
      }
 
-    public void setHomeGames(int homeGames) {
-         this.homeGames = homeGames;
-     }
-     public int getHomeGames() {
-         return homeGames;
-     }
-
-    public void setAwayGames(int awayGames) {
-         this.awayGames = awayGames;
-     }
-     public int getAwayGames() {
-         return awayGames;
-     }
-
-    public void setHomeMaxGamesInRow(int homeMaxGamesInRow) {
-         this.homeMaxGamesInRow = homeMaxGamesInRow;
-     }
-     public int getHomeMaxGamesInRow() {
-         return homeMaxGamesInRow;
-     }
-
-    public void setAwayMaxGamesInRow(int awayMaxGamesInRow) {
-         this.awayMaxGamesInRow = awayMaxGamesInRow;
-     }
-     public int getAwayMaxGamesInRow() {
-         return awayMaxGamesInRow;
-     }
-
-    public void setHomeTiebreaks(int homeTiebreaks) {
-         this.homeTiebreaks = homeTiebreaks;
-     }
-     public int getHomeTiebreaks() {
-         return homeTiebreaks;
-     }
-
     public void setAwayTiebreaks(int awayTiebreaks) {
          this.awayTiebreaks = awayTiebreaks;
      }
@@ -186,46 +147,46 @@ public class Statistics {
          return awayTiebreaks;
      }
 
-    public void setHomeFirstServePointsScored(int homeFirstServePointsScored) {
-         this.homeFirstServePointsScored = homeFirstServePointsScored;
+    public void setHomeServicePointsScored(int homeServicePointsScored) {
+         this.homeServicePointsScored = homeServicePointsScored;
      }
-     public int getHomeFirstServePointsScored() {
-         return homeFirstServePointsScored;
-     }
-
-    public void setHomeFirstServePointsTotal(int homeFirstServePointsTotal) {
-         this.homeFirstServePointsTotal = homeFirstServePointsTotal;
-     }
-     public int getHomeFirstServePointsTotal() {
-         return homeFirstServePointsTotal;
+     public int getHomeServicePointsScored() {
+         return homeServicePointsScored;
      }
 
-    public void setHomeFirstServePointsAccuracy(int homeFirstServePointsAccuracy) {
-         this.homeFirstServePointsAccuracy = homeFirstServePointsAccuracy;
+    public void setHomeServicePointsTotal(int homeServicePointsTotal) {
+         this.homeServicePointsTotal = homeServicePointsTotal;
      }
-     public int getHomeFirstServePointsAccuracy() {
-         return homeFirstServePointsAccuracy;
-     }
-
-    public void setAwayFirstServePointsScored(int awayFirstServePointsScored) {
-         this.awayFirstServePointsScored = awayFirstServePointsScored;
-     }
-     public int getAwayFirstServePointsScored() {
-         return awayFirstServePointsScored;
+     public int getHomeServicePointsTotal() {
+         return homeServicePointsTotal;
      }
 
-    public void setAwayFirstServePointsTotal(int awayFirstServePointsTotal) {
-         this.awayFirstServePointsTotal = awayFirstServePointsTotal;
+    public void setHomeServicePointsAccuracy(int homeServicePointsAccuracy) {
+         this.homeServicePointsAccuracy = homeServicePointsAccuracy;
      }
-     public int getAwayFirstServePointsTotal() {
-         return awayFirstServePointsTotal;
+     public int getHomeServicePointsAccuracy() {
+         return homeServicePointsAccuracy;
      }
 
-    public void setAwayFirstServePointsAccuracy(int awayFirstServePointsAccuracy) {
-         this.awayFirstServePointsAccuracy = awayFirstServePointsAccuracy;
+    public void setAwayServicePointsScored(int awayServicePointsScored) {
+         this.awayServicePointsScored = awayServicePointsScored;
      }
-     public int getAwayFirstServePointsAccuracy() {
-         return awayFirstServePointsAccuracy;
+     public int getAwayServicePointsScored() {
+         return awayServicePointsScored;
+     }
+
+    public void setAwayServicePointsTotal(int awayServicePointsTotal) {
+         this.awayServicePointsTotal = awayServicePointsTotal;
+     }
+     public int getAwayServicePointsTotal() {
+         return awayServicePointsTotal;
+     }
+
+    public void setAwayServicePointsAccuracy(int awayServicePointsAccuracy) {
+         this.awayServicePointsAccuracy = awayServicePointsAccuracy;
+     }
+     public int getAwayServicePointsAccuracy() {
+         return awayServicePointsAccuracy;
      }
 
     public void setHomeFirstServeScored(int homeFirstServeScored) {
@@ -268,48 +229,6 @@ public class Statistics {
      }
      public int getAwayFirstServeAccuracy() {
          return awayFirstServeAccuracy;
-     }
-
-    public void setHomeSecondServePointsScored(int homeSecondServePointsScored) {
-         this.homeSecondServePointsScored = homeSecondServePointsScored;
-     }
-     public int getHomeSecondServePointsScored() {
-         return homeSecondServePointsScored;
-     }
-
-    public void setHomeSecondServePointsTotal(int homeSecondServePointsTotal) {
-         this.homeSecondServePointsTotal = homeSecondServePointsTotal;
-     }
-     public int getHomeSecondServePointsTotal() {
-         return homeSecondServePointsTotal;
-     }
-
-    public void setHomeSecondServePointsAccuracy(int homeSecondServePointsAccuracy) {
-         this.homeSecondServePointsAccuracy = homeSecondServePointsAccuracy;
-     }
-     public int getHomeSecondServePointsAccuracy() {
-         return homeSecondServePointsAccuracy;
-     }
-
-    public void setAwaySecondServePointsScored(int awaySecondServePointsScored) {
-         this.awaySecondServePointsScored = awaySecondServePointsScored;
-     }
-     public int getAwaySecondServePointsScored() {
-         return awaySecondServePointsScored;
-     }
-
-    public void setAwaySecondServePointsTotal(int awaySecondServePointsTotal) {
-         this.awaySecondServePointsTotal = awaySecondServePointsTotal;
-     }
-     public int getAwaySecondServePointsTotal() {
-         return awaySecondServePointsTotal;
-     }
-
-    public void setAwaySecondServePointsAccuracy(int awaySecondServePointsAccuracy) {
-         this.awaySecondServePointsAccuracy = awaySecondServePointsAccuracy;
-     }
-     public int getAwaySecondServePointsAccuracy() {
-         return awaySecondServePointsAccuracy;
      }
 
     public void setHomeSecondServeScored(int homeSecondServeScored) {
@@ -396,48 +315,6 @@ public class Statistics {
          return awayBreakPointsAccuracy;
      }
 
-    public void setHomeServicePointsScored(int homeServicePointsScored) {
-         this.homeServicePointsScored = homeServicePointsScored;
-     }
-     public int getHomeServicePointsScored() {
-         return homeServicePointsScored;
-     }
-
-    public void setHomeServicePointsTotal(int homeServicePointsTotal) {
-         this.homeServicePointsTotal = homeServicePointsTotal;
-     }
-     public int getHomeServicePointsTotal() {
-         return homeServicePointsTotal;
-     }
-
-    public void setHomeServicePointsAccuracy(int homeServicePointsAccuracy) {
-         this.homeServicePointsAccuracy = homeServicePointsAccuracy;
-     }
-     public int getHomeServicePointsAccuracy() {
-         return homeServicePointsAccuracy;
-     }
-
-    public void setAwayServicePointsScored(int awayServicePointsScored) {
-         this.awayServicePointsScored = awayServicePointsScored;
-     }
-     public int getAwayServicePointsScored() {
-         return awayServicePointsScored;
-     }
-
-    public void setAwayServicePointsTotal(int awayServicePointsTotal) {
-         this.awayServicePointsTotal = awayServicePointsTotal;
-     }
-     public int getAwayServicePointsTotal() {
-         return awayServicePointsTotal;
-     }
-
-    public void setAwayServicePointsAccuracy(int awayServicePointsAccuracy) {
-         this.awayServicePointsAccuracy = awayServicePointsAccuracy;
-     }
-     public int getAwayServicePointsAccuracy() {
-         return awayServicePointsAccuracy;
-     }
-
     public void setHomeServiceGamesScored(int homeServiceGamesScored) {
          this.homeServiceGamesScored = homeServiceGamesScored;
      }
@@ -480,6 +357,90 @@ public class Statistics {
          return awayServiceGamesAccuracy;
      }
 
+    public void setHomeFirstServePointsScored(int homeFirstServePointsScored) {
+         this.homeFirstServePointsScored = homeFirstServePointsScored;
+     }
+     public int getHomeFirstServePointsScored() {
+         return homeFirstServePointsScored;
+     }
+
+    public void setHomeFirstServePointsTotal(int homeFirstServePointsTotal) {
+         this.homeFirstServePointsTotal = homeFirstServePointsTotal;
+     }
+     public int getHomeFirstServePointsTotal() {
+         return homeFirstServePointsTotal;
+     }
+
+    public void setHomeFirstServePointsAccuracy(int homeFirstServePointsAccuracy) {
+         this.homeFirstServePointsAccuracy = homeFirstServePointsAccuracy;
+     }
+     public int getHomeFirstServePointsAccuracy() {
+         return homeFirstServePointsAccuracy;
+     }
+
+    public void setAwayFirstServePointsScored(int awayFirstServePointsScored) {
+         this.awayFirstServePointsScored = awayFirstServePointsScored;
+     }
+     public int getAwayFirstServePointsScored() {
+         return awayFirstServePointsScored;
+     }
+
+    public void setAwayFirstServePointsTotal(int awayFirstServePointsTotal) {
+         this.awayFirstServePointsTotal = awayFirstServePointsTotal;
+     }
+     public int getAwayFirstServePointsTotal() {
+         return awayFirstServePointsTotal;
+     }
+
+    public void setAwayFirstServePointsAccuracy(int awayFirstServePointsAccuracy) {
+         this.awayFirstServePointsAccuracy = awayFirstServePointsAccuracy;
+     }
+     public int getAwayFirstServePointsAccuracy() {
+         return awayFirstServePointsAccuracy;
+     }
+
+    public void setHomeSecondServePointsScored(int homeSecondServePointsScored) {
+         this.homeSecondServePointsScored = homeSecondServePointsScored;
+     }
+     public int getHomeSecondServePointsScored() {
+         return homeSecondServePointsScored;
+     }
+
+    public void setHomeSecondServePointsTotal(int homeSecondServePointsTotal) {
+         this.homeSecondServePointsTotal = homeSecondServePointsTotal;
+     }
+     public int getHomeSecondServePointsTotal() {
+         return homeSecondServePointsTotal;
+     }
+
+    public void setHomeSecondServePointsAccuracy(int homeSecondServePointsAccuracy) {
+         this.homeSecondServePointsAccuracy = homeSecondServePointsAccuracy;
+     }
+     public int getHomeSecondServePointsAccuracy() {
+         return homeSecondServePointsAccuracy;
+     }
+
+    public void setAwaySecondServePointsScored(int awaySecondServePointsScored) {
+         this.awaySecondServePointsScored = awaySecondServePointsScored;
+     }
+     public int getAwaySecondServePointsScored() {
+         return awaySecondServePointsScored;
+     }
+
+    public void setAwaySecondServePointsTotal(int awaySecondServePointsTotal) {
+         this.awaySecondServePointsTotal = awaySecondServePointsTotal;
+     }
+     public int getAwaySecondServePointsTotal() {
+         return awaySecondServePointsTotal;
+     }
+
+    public void setAwaySecondServePointsAccuracy(int awaySecondServePointsAccuracy) {
+         this.awaySecondServePointsAccuracy = awaySecondServePointsAccuracy;
+     }
+     public int getAwaySecondServePointsAccuracy() {
+         return awaySecondServePointsAccuracy;
+     }
+
     public void setHomeReceiverPointsScored(int homeReceiverPointsScored) {
          this.homeReceiverPointsScored = homeReceiverPointsScored;
      }
@@ -520,34 +481,6 @@ public class Statistics {
      }
      public int getAwayReceiverPointsAccuracy() {
          return awayReceiverPointsAccuracy;
-     }
-
-    public void setPeriod1(Period1 period1) {
-         this.period1 = period1;
-     }
-     public Period1 getPeriod1() {
-         return period1;
-     }
-
-    public void setPeriod2(Period2 period2) {
-         this.period2 = period2;
-     }
-     public Period2 getPeriod2() {
-         return period2;
-     }
-
-    public void setStatisticsItems(StatisticsItems statisticsItems) {
-         this.statisticsItems = statisticsItems;
-     }
-     public StatisticsItems getStatisticsItems() {
-         return statisticsItems;
-     }
-
-    public void setPeriods(List<Periods> periods) {
-         this.periods = periods;
-     }
-     public List<Periods> getPeriods() {
-         return periods;
      }
 
 }
