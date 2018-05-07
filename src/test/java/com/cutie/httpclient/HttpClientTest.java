@@ -19,11 +19,47 @@ public class HttpClientTest {
 
     @Test
     public void getScoreDetail()throws Exception{
+        this.getScoreDetail("7795697");
+    }
+
+    @Test
+    public void getMatchList()throws Exception{
+        //创建一个httpclient对象
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        //创建一个uri对象
+        URIBuilder uriBuilder = new URIBuilder("https://www.sofascore.com/tennis//2018-05-06/json");
+        String currentTimeMillis = String.valueOf(System.currentTimeMillis());
+        currentTimeMillis = currentTimeMillis.substring(0,9);
+        uriBuilder.addParameter("_", currentTimeMillis);//"152561951"
+        HttpGet get = new HttpGet(uriBuilder.build());
+        //执行请求
+        CloseableHttpResponse response =httpClient.execute(get);
+        //取响应的结果
+        int statusCode =response.getStatusLine().getStatusCode();
+        System.out.println(statusCode);
+        HttpEntity entity =response.getEntity();
+        String string = EntityUtils.toString(entity,"utf-8");
+        Gson gson = new Gson();
+        System.out.println("gson format:");
+        System.out.println(string);
+        TennisGames tennisGames = gson.fromJson(string, TennisGames.class);
+        System.out.println(gson.toJson(tennisGames));
+        System.out.println(gson.toJson(tennisGames.getSportItem().getTournaments().get(0).getEvents().get(0).getId()));
+
+        this.getScoreDetail(String.valueOf(tennisGames.getSportItem().getTournaments().get(0).getEvents().get(0).getId()));
+
+        //关闭httpclient
+        response.close();
+        httpClient.close();
+    }
+
+    private void getScoreDetail(String id) throws Exception{
         //创建一个httpclient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         //创建一个uri对象
 //        URIBuilder uriBuilder = new URIBuilder("https://www.sofascore.com/event/7791152/json");
-        URIBuilder uriBuilder = new URIBuilder("https://www.sofascore.com/event/7795697/general/json");
+        String str = "https://www.sofascore.com/event/"+ id +"/general/json";
+        URIBuilder uriBuilder = new URIBuilder(str);
         String currentTimeMillis = String.valueOf(System.currentTimeMillis());
         currentTimeMillis = currentTimeMillis.substring(0,9);
         uriBuilder.addParameter("_", currentTimeMillis);//"152561951"
@@ -42,35 +78,6 @@ public class HttpClientTest {
         System.out.println(gson.toJson(tennisRoot));
 
         System.out.println(gson.toJson(tennisRoot.getPointByPoint().get(0).getGames().get(0)));
-
-        //关闭httpclient
-        response.close();
-        httpClient.close();
-    }
-
-    @Test
-    public void getMatchList()throws Exception{
-        //创建一个httpclient对象
-        CloseableHttpClient httpClient = HttpClients.createDefault();
-        //创建一个uri对象
-        URIBuilder uriBuilder = new URIBuilder("https://www.sofascore.com/tennis//2018-03-01/json");
-        String currentTimeMillis = String.valueOf(System.currentTimeMillis());
-        currentTimeMillis = currentTimeMillis.substring(0,9);
-        uriBuilder.addParameter("_", currentTimeMillis);//"152561951"
-        HttpGet get = new HttpGet(uriBuilder.build());
-        //执行请求
-        CloseableHttpResponse response =httpClient.execute(get);
-        //取响应的结果
-        int statusCode =response.getStatusLine().getStatusCode();
-        System.out.println(statusCode);
-        HttpEntity entity =response.getEntity();
-        String string = EntityUtils.toString(entity,"utf-8");
-        Gson gson = new Gson();
-        System.out.println("gson format:");
-        System.out.println(string);
-        TennisGames tennisGames = gson.fromJson(string, TennisGames.class);
-        System.out.println(gson.toJson(tennisGames));
-        System.out.println(gson.toJson(tennisGames.getSportItem().getTournaments().get(0).getTournament().getId()));
 
         //关闭httpclient
         response.close();

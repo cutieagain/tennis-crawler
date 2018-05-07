@@ -18,8 +18,8 @@ public class Vote {
     private String voteXPercentage;
     private String vote2Percentage;
     private double vote1ScaledPercentage;
-    private int voteXScaledPercentage;
-    private int vote2ScaledPercentage;
+    private double voteXScaledPercentage;
+    private double vote2ScaledPercentage;
     public void setVote1(int vote1) {
          this.vote1 = vote1;
      }
@@ -69,18 +69,19 @@ public class Vote {
          return vote1ScaledPercentage;
      }
 
-    public void setVoteXScaledPercentage(int voteXScaledPercentage) {
-         this.voteXScaledPercentage = voteXScaledPercentage;
-     }
-     public int getVoteXScaledPercentage() {
-         return voteXScaledPercentage;
-     }
+    public double getVoteXScaledPercentage() {
+        return voteXScaledPercentage;
+    }
 
-    public void setVote2ScaledPercentage(int vote2ScaledPercentage) {
-         this.vote2ScaledPercentage = vote2ScaledPercentage;
-     }
-     public int getVote2ScaledPercentage() {
-         return vote2ScaledPercentage;
-     }
+    public void setVoteXScaledPercentage(double voteXScaledPercentage) {
+        this.voteXScaledPercentage = voteXScaledPercentage;
+    }
 
+    public double getVote2ScaledPercentage() {
+        return vote2ScaledPercentage;
+    }
+
+    public void setVote2ScaledPercentage(double vote2ScaledPercentage) {
+        this.vote2ScaledPercentage = vote2ScaledPercentage;
+    }
 }

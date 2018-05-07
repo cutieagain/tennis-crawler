@@ -2,6 +2,8 @@
   * Copyright 2018 bejson.com 
   */
 package com.cutie.entity.tennis.singleGame;
+import com.cutie.entity.tennis.games.SubTeams;
+
 import java.util.List;
 
 /**
@@ -19,7 +21,7 @@ public class AwayTeam {
     private boolean national;
     private int id;
     private String shortName;
-    private List<String> subTeams;
+    private List<SubTeams> subTeams;
     public void setName(String name) {
          this.name = name;
      }
@@ -69,11 +71,15 @@ public class AwayTeam {
          return shortName;
      }
 
-    public void setSubTeams(List<String> subTeams) {
-         this.subTeams = subTeams;
-     }
-     public List<String> getSubTeams() {
-         return subTeams;
-     }
+    public boolean isNational() {
+        return national;
+    }
 
+    public List<SubTeams> getSubTeams() {
+        return subTeams;
+    }
+
+    public void setSubTeams(List<SubTeams> subTeams) {
+        this.subTeams = subTeams;
+    }
 }

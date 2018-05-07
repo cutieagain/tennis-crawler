@@ -14,7 +14,7 @@ public class HomeTeam {
 
     private String name;
     private long id;
-    private List<String> subTeams;
+    private List<SubTeams> subTeams;
     public void setName(String name) {
          this.name = name;
      }
@@ -29,11 +29,11 @@ public class HomeTeam {
          return id;
      }
 
-    public void setSubTeams(List<String> subTeams) {
-         this.subTeams = subTeams;
-     }
-     public List<String> getSubTeams() {
-         return subTeams;
-     }
+    public List<SubTeams> getSubTeams() {
+        return subTeams;
+    }
 
+    public void setSubTeams(List<SubTeams> subTeams) {
+        this.subTeams = subTeams;
+    }
 }

@@ -3,6 +3,8 @@
   */
 package com.cutie.entity.tennis.games;
 
+import org.springframework.context.annotation.Bean;
+
 /**
  * Auto-generated: 2018-05-07 17:47:19
  *
