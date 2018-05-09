@@ -12,9 +12,9 @@ import java.util.List;
  */
 public class Games {
 
-    private int game;
-    private List<Points> points;
-    private Score score;
+    private int game;//第几小局
+    private List<Points> points;//比分列表
+    private Score score;//当前局比分
     public void setGame(int game) {
          this.game = game;
      }

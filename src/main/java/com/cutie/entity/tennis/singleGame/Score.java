@@ -13,6 +13,8 @@ public class Score {
 
     private int homeScore;
     private int awayScore;
+    private int serving;
+    private int scoring;
     public void setHomeScore(int homeScore) {
          this.homeScore = homeScore;
      }
@@ -27,4 +29,19 @@ public class Score {
          return awayScore;
      }
 
+    public int getServing() {
+        return serving;
+    }
+
+    public void setServing(int serving) {
+        this.serving = serving;
+    }
+
+    public int getScoring() {
+        return scoring;
+    }
+
+    public void setScoring(int scoring) {
+        this.scoring = scoring;
+    }
 }

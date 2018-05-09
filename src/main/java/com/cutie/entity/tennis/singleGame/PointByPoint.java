@@ -12,9 +12,9 @@ import java.util.List;
  */
 public class PointByPoint {
 
-    private int set;
-    private List<Games> games;
-    private Score score;
+    private int set;//第几大局
+    private List<Games> games;//每局比分详情
+    private Score score;//当前局最终比分
     public void setSet(int set) {
          this.set = set;
      }
